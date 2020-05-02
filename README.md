@@ -3,11 +3,6 @@ In this little repo We're just looking at a simple button clicker using both cla
 Just clone, install and run. Be sure to study the files for differences, becuase as you can see, to the end user,
 the appear identical.
 
-# Why does stuff run twice??
-If you're using create-react-app, like this project, then you may notice logs appear doubled sometimes. That's because of React.strictMode, which is called in the index.js file:
-https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects
-
-TL;DR: React is trying to help you notice unwanted side effects. So in dev builds, it will run things like render and constructor methods *twice*. This would make unwanted side effects and memory leaks more obvious so you can catch them. That's why in this project a bunch of logs show up twice when they would really only show up once in production. You can turn it off if you don't like it by removing the tags, but it's probably a good idea to leave them in.
 
 # A tale of two comparisons
 Go read the files first! This extra!

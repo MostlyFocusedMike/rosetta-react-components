@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-console.log('Why is my shit logging twice?? React.strictMode -mike')
+// StrictMode runs some things twice. Check out the docs
+// https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+//   <React.StrictMode>
+    <App />,
+//   </React.StrictMode>,
   document.getElementById('root')
 );
 
